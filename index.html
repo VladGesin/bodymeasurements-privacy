@@ -67,24 +67,25 @@
   <header>
     <p class="eyebrow">Body Measurements: Track &amp; Log</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 30 May 2026 · Last updated: 30 May 2026</p>
+    <p class="meta">Effective date: 30 May 2026 · Last updated: 17 June 2026</p>
   </header>
 
   <div class="tldr">
     <p><strong>The short version.</strong> Body Measurements is built to keep your data yours.</p>
     <p>• Everything you log stays <strong>on your device</strong> by default.</p>
     <p>• <strong>No account, no login, no email required.</strong></p>
-    <p>• <strong>No analytics, no advertising, no third-party tracking.</strong> We don't sell or share your data — ever.</p>
+    <p>• <strong>No advertising, no third-party tracking, no data brokers.</strong> We don't sell or share your data — ever.</p>
+    <p>• We collect <strong>anonymous usage statistics</strong> (which screens and actions are used) to improve the app. These are <strong>never linked to your identity</strong> and never include your measurements or photos. You can turn this off anytime in Settings.</p>
     <p>• Optional iCloud sync uses <strong>your own private iCloud</strong>, which we cannot read. Your progress photos <strong>never leave your device</strong>.</p>
   </div>
 
   <h2><span class="num">1.</span>Who we are</h2>
   <p>This app, <strong>“Body Measurements: Track &amp; Log”</strong> (bundle identifier <code>com.gainlogger.BodyMeasurements</code>), is developed and operated by <strong>Vlad Gasin</strong>, an individual developer (“we”, “us”, “the developer”). This policy explains what the app does — and does not do — with your information.</p>
 
-  <p>For the purposes of the GDPR, the data controller is Vlad Gasin, based in Israel — a country recognised by the European Commission as providing an adequate level of data protection. The developer operates no servers and transfers no data itself; any cloud processing is carried out by Apple under Apple's own safeguards. Controller contact: <a href="mailto:support@gainlogger.app">support@gainlogger.app</a>.</p>
+  <p>For the purposes of the GDPR, the data controller is Vlad Gasin, based in Israel — a country recognised by the European Commission as providing an adequate level of data protection. The only data the developer receives is the anonymous, non-identifying usage analytics described in Section 6 (processed on our behalf by Supabase); all of your personal content — measurements, photos, and health data — stays on your device or in your own iCloud, processed by Apple under Apple's own safeguards. Controller contact: <a href="mailto:support@gainlogger.app">support@gainlogger.app</a>.</p>
 
   <h2><span class="num">2.</span>Our privacy approach</h2>
-  <p>The app is a personal body-measurement and progress tracker designed to work entirely on your device. We deliberately built it with no user accounts, no servers of our own, and no third-party analytics or advertising. We have no access to your measurements, photos, or health data.</p>
+  <p>The app is a personal body-measurement and progress tracker designed to work on your device. We deliberately built it with no user accounts and no advertising, and <strong>we have no access to your measurements, photos, or health data</strong> — those never leave your device or your private iCloud. The one exception is <strong>anonymous usage analytics</strong>: aggregate, non-identifying signals about which features are used, which we collect to decide what to improve. These contain no personal content and are described in full in Section 6. You can turn them off at any time in Settings.</p>
 
   <h2><span class="num">3.</span>What information the app handles</h2>
   <p>You may choose to enter or capture the following, all of which is stored locally on your device:</p>
@@ -94,7 +95,7 @@
     <li><strong>Progress photos</strong> (optional) — photos you capture or import to track visual progress.</li>
     <li><strong>Profile &amp; preferences</strong> — your height, sex, units, goals, reminder settings, and appearance. Height and sex are used only to calculate stats such as BMI and body-fat percentage on your device.</li>
   </ul>
-  <p>We do not collect your name, email address, phone number, precise location, contacts, or any advertising identifier.</p>
+  <p>We do not collect your name, email address, phone number, precise location, contacts, or any advertising identifier. The anonymous analytics in Section 6 use a random per-install identifier that is <strong>not linked to you or your Apple ID</strong> and resets if you reinstall the app.</p>
 
   <h2><span class="num">4.</span>Where your data is stored</h2>
   <p><strong>On your device.</strong> All measurements, GLP-1 logs, photos, and settings are stored locally on your iPhone (using Apple's on-device database and file storage).</p>
@@ -105,13 +106,18 @@
   <p>If you enable Apple Health sync (a Pro feature, off by default and requiring your explicit permission), the app <strong>writes</strong> supported metrics to Apple Health so your other health apps can use them: weight, waist circumference, height, body mass index (BMI), and body-fat percentage.</p>
   <p>This is <strong>one-way</strong>. The app only writes these values when you log them — it <strong>never reads</strong> data from Apple Health, and it never modifies or deletes anything in Health. Custom measurements that Apple Health doesn't support (for example chest, hips, or biceps) are not written. You control this permission in the Health app or iOS Settings.</p>
 
-  <h2><span class="num">6.</span>No accounts, no tracking, no third parties</h2>
+  <h2><span class="num">6.</span>Anonymous usage analytics</h2>
+  <p>To understand which features are useful and where the app can be improved, we collect <strong>anonymous, aggregate usage analytics</strong>. This is the only information that ever leaves your device to us.</p>
+  <p><strong>What we collect:</strong></p>
   <ul>
-    <li>There is <strong>no sign-up, login, or account</strong> of any kind.</li>
-    <li>The app contains <strong>no analytics SDKs, no advertising, and no third-party tracking</strong> tools.</li>
-    <li>The app makes <strong>no network calls to our servers</strong> — we don't operate any. The only network activity is to Apple's own services (iCloud, Apple Health, and the App Store for purchases), which you control.</li>
-    <li>We do <strong>not sell, rent, or share</strong> your personal information with anyone.</li>
+    <li><strong>Product-interaction events</strong> — for example, that an onboarding step was reached, completed, or skipped; that a measurement was logged (and which <em>type</em>, such as “waist”); that a photo was added; or that the purchase screen was shown.</li>
+    <li><strong>A random install identifier</strong> — a randomly generated value created on first launch so we can understand anonymous funnels (e.g. how many users finish setup). It is <strong>not linked to your name, email, Apple ID, or any advertising identifier</strong>, and it resets if you reinstall the app.</li>
+    <li><strong>Basic technical context</strong> — your app version and iOS version.</li>
   </ul>
+  <p><strong>What we never collect:</strong> your actual measurement <em>values</em>, weights, dates of birth, progress photos, GLP-1 details, names, emails, or any free-text you enter. We record <em>that</em> an action happened — never your personal content.</p>
+  <p><strong>How it works:</strong> these events are sent to our analytics database hosted by <strong>Supabase</strong> (our data processor), where only the developer can read them in aggregate. We do <strong>not sell, rent, or share</strong> this data, and it is never combined with data from other apps or used to track you across the internet. There are no advertising or third-party tracking SDKs in the app.</p>
+  <p><strong>Your control:</strong> usage analytics are on by default but fully optional. You can turn them off at any time in <strong>Settings → Data → “Share anonymous usage data.”</strong> When off, no usage events are sent.</p>
+  <p>There is also <strong>no sign-up, login, or account</strong> of any kind, and all other network activity is limited to Apple's own services (iCloud, Apple Health, and the App Store for purchases), which you control.</p>
 
   <h2><span class="num">7.</span>Purchases</h2>
   <p>Optional Pro features are sold as in-app purchases handled entirely by <strong>Apple's App Store (StoreKit)</strong>. Apple processes your payment — the app never sees or stores your payment-card details or billing information. The app only receives a confirmation of whether you have an active Pro entitlement. Apple's handling of purchase data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
@@ -136,10 +142,10 @@
     <li><strong>Correction</strong> — edit any entry directly in the app.</li>
     <li><strong>Erasure</strong> — delete individual entries or photos in the app; deleting the app removes all locally stored data; if you used iCloud Sync, you can also remove the data from your iCloud account in iOS Settings.</li>
   </ul>
-  <p>Where the GDPR applies, our legal basis for any processing is your consent and the performance of the app's core functionality (Article 6(1)(a) and (b)); because everything happens on your own device and within your own iCloud and Apple Health accounts, the developer does not access, receive, or control your data. If you are in the <strong>European Economic Area or the UK</strong>, you have rights of access, rectification, erasure, restriction, portability, and objection — all of which you can exercise yourself directly on your device as described above. If you are a <strong>California</strong> resident, you have the rights to know, delete, correct, and to non-discrimination, and <strong>we do not sell or share your personal information</strong> and operate no tracking, so there is nothing to opt out of. We also honour your rights under <strong>Israel's Protection of Privacy Law</strong>. If you have any request we can help with, contact us using Section 13.</p>
+  <p>Where the GDPR applies, our legal basis for the app's core functionality is your consent and the performance of that functionality (Article 6(1)(a) and (b)); because your personal content stays on your own device and within your own iCloud and Apple Health accounts, the developer does not access, receive, or control it. Our legal basis for the anonymous usage analytics in Section 6 is our <strong>legitimate interest</strong> in understanding and improving the app (Article 6(1)(f)); because the data is not linked to your identity it is effectively anonymous, and you can switch it off at any time in Settings. If you are in the <strong>European Economic Area or the UK</strong>, you have rights of access, rectification, erasure, restriction, portability, and objection — for your on-device data you exercise these directly as described above, and for analytics you can opt out in Settings or contact us. If you are a <strong>California</strong> resident, you have the rights to know, delete, correct, and to non-discrimination, and <strong>we do not sell or share your personal information</strong>. We also honour your rights under <strong>Israel's Protection of Privacy Law</strong>. If you have any request we can help with, contact us using Section 13.</p>
 
   <h2><span class="num">11.</span>Data retention &amp; deletion</h2>
-  <p>We retain none of your data on our side, because we never receive it. Your data is kept on your device until you delete it. To remove everything: delete entries and photos within the app, then delete the app. If iCloud Sync was enabled, remove the app's data from your iCloud account in iOS Settings.</p>
+  <p>We receive none of your personal content — measurements, photos, GLP-1 logs, and health data stay on your device or in your own iCloud until you delete them. To remove everything: delete entries and photos within the app, then delete the app. If iCloud Sync was enabled, remove the app's data from your iCloud account in iOS Settings. The anonymous usage analytics in Section 6 (which contain no personal content) are retained in aggregate to track product trends; you can stop new analytics at any time in Settings, and you may email us to request deletion of analytics associated with your random install identifier.</p>
 
   <h2><span class="num">12.</span>Changes to this policy</h2>
   <p>If we update this policy, we will revise the “Last updated” date above and post the new version at this same URL. Material changes will be reflected here before they take effect.</p>
